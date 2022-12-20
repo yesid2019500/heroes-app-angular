@@ -1,0 +1,99 @@
+
+
+<div class="modal" *ngIf="open; else divHeroe" >
+  <div class="content" (click)="close()" >
+    <h3> sent vote!</h3>
+    <h4>new vote</h4>
+    <h5>Back<<</h5>
+    <div>
+      <button class="like" (click)="votar()" >
+        <span class="material-symbols-outlined">
+          thumb_up
+          </span>
+      </button>
+    </div>
+  </div>
+</div>
+
+
+<ng-template #divHeroe></ng-template>
+
+
+<!-- down -->
+<div class="modal" *ngIf="down; else divHeroe" >
+  <div class="content" (click)="close()" >
+    <h3> sent vote!</h3>
+    <h4>new vote</h4>
+    <h5>Back<<</h5>
+    <div>
+      <button class="dislike" (click)="dislike()" >
+        <span class="material-symbols-outlined">
+          thumb_down
+          </span>
+      </button>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="container">
+    <input type="number" hidden
+    [(ngModel)]="points.like"
+    >
+    <input type="number" hidden
+    [(ngModel)]="points.dislike"
+    >
+
+</div>
+
+<div class="container-buttons">
+  <div class="title">
+      <h2>Do you like the website ?</h2>
+  </div>
+  <div class="bottons">
+    <button class="like" (click)="votar()" >
+      <span class="material-symbols-outlined">
+        thumb_up
+        </span>
+    </button>
+    <button class="dislike" (click)="dislike()" >
+      <span class="material-symbols-outlined">
+        thumb_down
+        </span>
+    </button>
+  </div>
+</div>
+
+
+
+<!-- <button (click)="saveN()" >save</button> -->
+
+<div class="bar">
+  <div class="up"> %{{like}} </div>
+  <div class="dowm"> %{{unLike}} </div>
+</div>
+
+<mat-divider></mat-divider>
+<br>
+
+<div 
+fxLayout="row wrap"
+fxLayout.xs="column"
+fxLayoutAlign="center"
+fxLayoutGap="20px"
+ >
+
+    <div fxFlex="50"
+        fxFlex.lg="40"
+        fxFlex.sm="30"
+      *ngFor="let heroes of heroe" >
+   
+      <app-hero-tarjeta [heroes]="heroes" ></app-hero-tarjeta>
+
+    </div>
+
+    
+</div>
+

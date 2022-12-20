@@ -1,0 +1,80 @@
+
+.container {
+    margin: 10px;
+}
+
+
+
+  
+  .banner {
+      padding: 6em 0 8em 0;
+      text-align: center;
+    width: 100%;
+    background-image: url(https://dam.smashmexico.com.mx/wp-content/uploads/2018/11/hulkbio_portada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(0,0,0,0.5);
+    animation-duration: 3s ;
+    animation-name: slidein;
+    animation: slidein 10s infinite linear;
+  }
+
+
+  @keyframes slidein {
+    from {
+        background-image: url(https://dam.smashmexico.com.mx/wp-content/uploads/2018/11/hulkbio_portada.jpg);
+    }
+  
+    30% {
+        background-image: url(https://sm.ign.com/t/ign_es/feature/t/the-top-25/the-top-25-heroes-of-dc-comics_pj4u.1200.jpg);
+    }
+
+    50% {
+        background-image: url(http://3.bp.blogspot.com/-2qriRBrdeX0/VI8sl6sBnYI/AAAAAAAA8lg/G_hFr9ivea0/s1600/ranking-superheroes-marvel.jpg);
+    }
+  
+    to {
+        background-image: url(https://www.cinconoticias.com/wp-content/uploads/peores-superheroes-del-comic.jpg);
+    }
+  }
+
+  
+  .border {
+      width: 60%;
+      margin: 0 auto;
+      height: 47px;
+      border: 2px solid #fff;
+    border-bottom: 0;
+  }
+  .banner h2 {
+      margin: 0;
+      font-size: 3em;
+      color: #FFFFFF;
+      text-align: center;
+      font-weight: 300;
+      text-transform: uppercase;
+      letter-spacing: 0.5em;
+      padding: 0.5em 0 0 0;
+  }
+  
+  .banner p {
+      color: #FFFFFF;
+      font-size: 1em;
+      font-weight: bold;
+      margin: 1em 0 0 0;
+      line-height: 2em;
+      letter-spacing: 2px;
+    padding: 0 0 2em 0;
+  }
+  
+  .border-bottom {
+      border-top: 0;
+      border-bottom: 2px solid #fff !important;
+  } 
+
+
+  @media (max-width:500px){
+    .banner h2 {
+      font-size: 0.8rem;
+    }
+  }

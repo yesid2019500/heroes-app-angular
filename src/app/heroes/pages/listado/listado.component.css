@@ -1,0 +1,182 @@
+
+.bottons {
+    width: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 63%;
+    left: 50%;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 55%;
+    left: 50%;
+    width: 240px;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.382);
+}
+
+.like {
+    width: 100px;
+    height: 70px;
+    background: rgba(0, 0, 255, 0.487);
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    border: none;
+    transition: 0.5s ease;
+}
+
+.dislike {
+    width: 100px;
+    height: 70px;
+    background: rgba(175, 83, 83, 0.679);
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    cursor: pointer;
+    border: none;
+    transition: 0.5s ease;
+}
+
+.like span {
+    font-size: 2.6rem;
+    color:#fff;
+}
+
+.dislike span {
+    font-size: 2.6rem;
+    color:#fff;
+}
+
+.like:hover {
+    transform: rotate(5deg);
+}
+
+.dislike:hover {
+    transform: rotate(5deg);
+}
+
+.bar {
+    display: flex;
+    /* background-color: purple; */
+    justify-content: space-between;
+    width: 90%;
+    height: 60px;
+    margin: auto;
+}
+
+.up {
+    width: 75%;
+    background: rgba(0, 0, 255, 0.487);
+    text-align: center;
+    color: #fff;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dowm {
+    width: 35%;
+    background: rgba(175, 83, 83, 0.679);
+    text-align: center;
+    color: #fff;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* modal */
+
+ .modal {
+    width: 100%;
+    height: 2000px;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.325);
+    top: 0;
+    left: 0;
+    z-index: 10;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.content {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.598);
+    top: 15%;
+    left: 30%;
+    width: 300px;
+    height: 300px;
+    z-index: 50;
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+
+.content button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+}
+
+.content h3 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2rem;
+    color: rgb(32, 182, 32);
+}
+
+.content h4 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.3rem;
+    color:#fff;
+    background: rgba(0, 0, 0, 0.83);
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    cursor: pointer;
+    transition: ease 0.8s;
+    margin-bottom: 5px;
+}
+
+.content h4:hover {
+    width: 85%;
+    color:  rgba(0, 0, 255, 0.487);
+}
+
+
+.content h5 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.3rem;
+    color:#fff;
+    background:  rgba(0, 0, 255, 0.487);
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    cursor: pointer;
+    transition: ease 0.8s;
+}
+
+.content h5:hover {
+    width: 85%;
+    color:  rgba(0, 0, 255, 0.616);
+}

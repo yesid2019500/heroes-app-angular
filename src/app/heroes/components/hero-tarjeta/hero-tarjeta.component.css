@@ -1,0 +1,17 @@
+
+mat-card {
+    margin-top: 20px;
+}
+
+.comments {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.comments span:hover {
+    color: #fff;
+}
